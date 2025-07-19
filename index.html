@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Data</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="13" max="20">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter your password">
+
+        <label for="marks">Marks:</label>
+        <input type="number" name="marks" min="35" max="100">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+
+        <br><br>
+        <label>Course:</label>
+        <input type="checkbox" name="course" value="C"> C
+        <input type="checkbox" name="course" value="C++"> C++
+        <input type="checkbox" name="course" value="Java"> Java
+
+        <br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Korea">Korea</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="40" rows="4" placeholder="Enter your comments"></textarea>
+
+        <input type="button" value="Login">
+        <input type="button" value="Signup">
+
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+        <input type="button" value="Refresh" onclick="location.reload()">
+    </form>
+
+</body>
+</html>
